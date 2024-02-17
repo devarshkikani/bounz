@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vernost.BounzAppUAT.app-mergeReleaseResources-55:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,95",
+                        "endColumns": "39,40",
+                        "endOffsets": "90,131"
+                    }
+                },
+                {
+                    "source": "/Users/dreamworld/.gradle/caches/transforms-3/71151e5229d85b1b820227fdb9775c5d/transformed/appcompat-1.4.2/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "136,205,274,344,418,494,553,624",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "200,269,339,413,489,548,619,687"
+                    }
+                }
+            ]
+        }
+    ]
+}

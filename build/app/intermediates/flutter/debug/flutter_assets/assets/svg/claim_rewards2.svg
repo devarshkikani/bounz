@@ -1,0 +1,13 @@
+<svg id="Claim_rewards" data-name="Claim rewards" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_89529" data-name="Group 89529" transform="translate(1.262 1.261)">
+    <path id="Path_157256" data-name="Path 157256" d="M0,0H21.479V21.479H0Z" fill="none"/>
+    <circle id="Ellipse_6416" data-name="Ellipse 6416" cx="5.57" cy="5.57" r="5.57" transform="translate(5.064 2.237)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_157257" data-name="Path 157257" d="M0,0V6.086L2.685,4.3,5.37,6.086V0" transform="translate(10.741 13.427) rotate(-30)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_157258" data-name="Path 157258" d="M0,0V6.086L2.685,4.3,5.37,6.086V0" transform="translate(6.087 10.742) rotate(30)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <g id="Group_89530" data-name="Group 89530" transform="translate(6.82 4.302)">
+      <path id="Path_157260" data-name="Path 157260" d="M0,0H7.63V7.63H0Z" fill="none"/>
+      <path id="Path_157261" data-name="Path 157261" d="M5.184,7.008,3.222,8.04,3.6,5.855,2.007,4.308,4.2,3.99,5.182,2,6.163,3.99l2.194.318L6.767,5.855,7.142,8.04Z" transform="translate(-1.369 -1.366)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+  <rect id="Rectangle_30170" data-name="Rectangle 30170" width="24" height="24" fill="none"/>
+</svg>

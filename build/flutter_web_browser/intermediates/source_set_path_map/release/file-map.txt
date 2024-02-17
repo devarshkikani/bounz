@@ -1,0 +1,13 @@
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-core-1.6.0-0 /Users/dreamworld/.gradle/caches/transforms-3/1077398287d24e3c22651bfa3832d39b/transformed/core-1.6.0/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-jetified-window-java-1.0.0-beta04-1 /Users/dreamworld/.gradle/caches/transforms-3/2192e90f432a057d1809d160982486c3/transformed/jetified-window-java-1.0.0-beta04/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-browser-1.4.0-2 /Users/dreamworld/.gradle/caches/transforms-3/495f488f533f73122cab033732ce6d34/transformed/browser-1.4.0/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-jetified-window-1.0.0-beta04-3 /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-jetified-annotation-experimental-1.1.0-4 /Users/dreamworld/.gradle/caches/transforms-3/f59ac6a1f97f895e24e2db4404b7f538/transformed/jetified-annotation-experimental-1.1.0/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-main-5 /Users/dreamworld/.pub-cache/hosted/pub.dev/flutter_web_browser-0.17.1/android/src/main/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-release-6 /Users/dreamworld/.pub-cache/hosted/pub.dev/flutter_web_browser-0.17.1/android/src/release/res
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-pngs-7 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_web_browser/generated/res/pngs/release
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-resValues-8 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_web_browser/generated/res/resValues/release
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-rs-9 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_web_browser/generated/res/rs/release
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-mergeReleaseResources-10 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_web_browser/intermediates/incremental/release/mergeReleaseResources/merged.dir
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-mergeReleaseResources-11 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_web_browser/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+dev.vbonnet.flutterwebbrowser.flutter_web_browser-merged_res-12 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_web_browser/intermediates/merged_res/release

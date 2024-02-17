@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "dev.spike.flutter_health_connect.spike_flutter_sdk-merged_res-28:/xml/backup_rules.xml",
+        "source": "dev.spike.flutter_health_connect.spike_flutter_sdk-jetified-spike-sdk-2.3.2-18:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "dev.spike.flutter_health_connect.spike_flutter_sdk-merged_res-28:/xml/data_extraction_rules.xml",
+        "source": "dev.spike.flutter_health_connect.spike_flutter_sdk-jetified-spike-sdk-2.3.2-18:/xml/data_extraction_rules.xml"
+    }
+]

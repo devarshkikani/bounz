@@ -1,0 +1,9 @@
+<svg id="Comunication_Preference" data-name="Comunication Preference" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_28665" data-name="Rectangle 28665" width="24" height="24" fill="none"/>
+  <g id="Group_85077" data-name="Group 85077" transform="translate(1.209 1.209)">
+    <path id="Path_139719" data-name="Path 139719" d="M0,0H21.582V21.582H0Z" fill="none"/>
+    <path id="Path_139720" data-name="Path 139720" d="M24.106,17.106l-3.847-3.847H11.282A1.282,1.282,0,0,1,10,11.977V4.282A1.282,1.282,0,0,1,11.282,3H22.824a1.282,1.282,0,0,1,1.282,1.282V17.106" transform="translate(-7.303 1.778)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_3034" data-name="Line 3034" x2="4.867" transform="translate(6.316 8.618)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    <line id="Line_3035" data-name="Line 3035" x2="4.867" transform="translate(6.316 11.618)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  </g>
+</svg>

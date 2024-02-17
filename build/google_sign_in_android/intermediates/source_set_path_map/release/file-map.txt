@@ -1,0 +1,15 @@
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-play-services-auth-20.7.0-0 /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-core-1.6.0-1 /Users/dreamworld/.gradle/caches/transforms-3/1077398287d24e3c22651bfa3832d39b/transformed/core-1.6.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-window-java-1.0.0-beta04-2 /Users/dreamworld/.gradle/caches/transforms-3/2192e90f432a057d1809d160982486c3/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-play-services-basement-18.2.0-3 /Users/dreamworld/.gradle/caches/transforms-3/d75343d2cf53f07cb161d848a4758e5a/transformed/jetified-play-services-basement-18.2.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-play-services-base-18.0.1-4 /Users/dreamworld/.gradle/caches/transforms-3/ea8c6f68d5f3de1df0e0c408473c3951/transformed/jetified-play-services-base-18.0.1/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-window-1.0.0-beta04-5 /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-annotation-experimental-1.1.0-6 /Users/dreamworld/.gradle/caches/transforms-3/f59ac6a1f97f895e24e2db4404b7f538/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-main-7 /Users/dreamworld/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.20/android/src/main/res
+io.flutter.plugins.googlesignin.google_sign_in_android-release-8 /Users/dreamworld/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.20/android/src/release/res
+io.flutter.plugins.googlesignin.google_sign_in_android-pngs-9 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/google_sign_in_android/generated/res/pngs/release
+io.flutter.plugins.googlesignin.google_sign_in_android-resValues-10 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/google_sign_in_android/generated/res/resValues/release
+io.flutter.plugins.googlesignin.google_sign_in_android-rs-11 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/google_sign_in_android/generated/res/rs/release
+io.flutter.plugins.googlesignin.google_sign_in_android-mergeReleaseResources-12 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/google_sign_in_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.googlesignin.google_sign_in_android-mergeReleaseResources-13 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/google_sign_in_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.googlesignin.google_sign_in_android-merged_res-14 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/google_sign_in_android/intermediates/merged_res/release

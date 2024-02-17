@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vernost.BounzAppUAT.app-mergeDebugResources-55:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,94",
+                        "endColumns": "38,41",
+                        "endOffsets": "89,131"
+                    }
+                },
+                {
+                    "source": "/Users/dreamworld/.gradle/caches/transforms-3/71151e5229d85b1b820227fdb9775c5d/transformed/appcompat-1.4.2/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    },
+                    "to": {
+                        "startLines": "4,5,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "136,206,277",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "201,272,340"
+                    }
+                }
+            ]
+        }
+    ]
+}

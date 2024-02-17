@@ -1,0 +1,12 @@
+com.baseflow.permissionhandler.permission_handler_android-core-1.6.0-0 /Users/dreamworld/.gradle/caches/transforms-3/1077398287d24e3c22651bfa3832d39b/transformed/core-1.6.0/res
+com.baseflow.permissionhandler.permission_handler_android-jetified-window-java-1.0.0-beta04-1 /Users/dreamworld/.gradle/caches/transforms-3/2192e90f432a057d1809d160982486c3/transformed/jetified-window-java-1.0.0-beta04/res
+com.baseflow.permissionhandler.permission_handler_android-jetified-window-1.0.0-beta04-2 /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/res
+com.baseflow.permissionhandler.permission_handler_android-jetified-annotation-experimental-1.1.0-3 /Users/dreamworld/.gradle/caches/transforms-3/f59ac6a1f97f895e24e2db4404b7f538/transformed/jetified-annotation-experimental-1.1.0/res
+com.baseflow.permissionhandler.permission_handler_android-main-4 /Users/dreamworld/.pub-cache/hosted/pub.dev/permission_handler_android-10.3.6/android/src/main/res
+com.baseflow.permissionhandler.permission_handler_android-release-5 /Users/dreamworld/.pub-cache/hosted/pub.dev/permission_handler_android-10.3.6/android/src/release/res
+com.baseflow.permissionhandler.permission_handler_android-pngs-6 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/permission_handler_android/generated/res/pngs/release
+com.baseflow.permissionhandler.permission_handler_android-resValues-7 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/permission_handler_android/generated/res/resValues/release
+com.baseflow.permissionhandler.permission_handler_android-rs-8 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/permission_handler_android/generated/res/rs/release
+com.baseflow.permissionhandler.permission_handler_android-mergeReleaseResources-9 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/permission_handler_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.baseflow.permissionhandler.permission_handler_android-mergeReleaseResources-10 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/permission_handler_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.baseflow.permissionhandler.permission_handler_android-merged_res-11 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/permission_handler_android/intermediates/merged_res/release

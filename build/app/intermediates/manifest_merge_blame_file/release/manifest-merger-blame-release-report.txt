@@ -1,0 +1,1117 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vernost.BounzAppUAT"
+4    android:versionCode="50"
+5    android:versionName="6.0.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml
+10 //"com.vernost.BounzApp"
+11    <queries>
+11-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:3:5-11:15
+12        <package android:name="com.android.chrome" />
+12-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:4:9-54
+12-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:4:18-51
+13        <package android:name="org.mozilla.firefox" />
+13-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:5:9-55
+13-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:5:18-52
+14        <package android:name="com.opera.browser" />
+14-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:6:9-53
+14-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:6:18-50
+15        <package android:name="com.opera.mini.native" />
+15-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:7:9-57
+15-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:7:18-54
+16        <package android:name="com.microsoft.emmx" />
+16-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:8:9-54
+16-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:8:18-51
+17        <package android:name="com.google.android.gm" />
+17-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:9:9-57
+17-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:9:18-54
+18        <package android:name="com.google.android.apps.healthdata" />
+18-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:10:9-70
+18-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:10:18-67
+19        <package android:name="com.facebook.katana" />
+19-->[com.facebook.android:facebook-common:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/AndroidManifest.xml:18:9-55
+19-->[com.facebook.android:facebook-common:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/AndroidManifest.xml:18:18-52
+20    </queries>
+21
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:12:5-66
+22-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:12:22-64
+23    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+23-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:13:5-78
+23-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:13:22-76
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:14:5-78
+24-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:14:22-76
+25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:15:5-80
+25-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:15:22-78
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:16:5-64
+26-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:16:22-62
+27    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+27-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:17:5-76
+27-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:17:22-74
+28    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" />
+28-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:18:5-92
+28-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:18:22-90
+29    <uses-permission android:name="android.permission.health.WRITE_ACTIVE_CALORIES_BURNED" />
+29-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:19:5-93
+29-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:19:22-91
+30    <uses-permission android:name="android.permission.health.READ_BASAL_BODY_TEMPERATURE" />
+30-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:20:5-92
+30-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:20:22-90
+31    <uses-permission android:name="android.permission.health.WRITE_BASAL_BODY_TEMPERATURE" />
+31-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:21:5-93
+31-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:21:22-91
+32    <uses-permission android:name="android.permission.health.READ_BASAL_METABOLIC_RATE" />
+32-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:22:5-90
+32-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:22:22-88
+33    <uses-permission android:name="android.permission.health.WRITE_BASAL_METABOLIC_RATE" />
+33-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:23:5-91
+33-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:23:22-89
+34    <uses-permission android:name="android.permission.health.READ_BLOOD_GLUCOSE" />
+34-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:24:5-83
+34-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:24:22-81
+35    <uses-permission android:name="android.permission.health.WRITE_BLOOD_GLUCOSE" />
+35-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:25:5-84
+35-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:25:22-82
+36    <uses-permission android:name="android.permission.health.READ_BLOOD_PRESSURE" />
+36-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:26:5-84
+36-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:26:22-82
+37    <uses-permission android:name="android.permission.health.WRITE_BLOOD_PRESSURE" />
+37-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:27:5-85
+37-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:27:22-83
+38    <uses-permission android:name="android.permission.health.READ_BODY_FAT" />
+38-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:28:5-78
+38-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:28:22-76
+39    <uses-permission android:name="android.permission.health.WRITE_BODY_FAT" />
+39-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:29:5-79
+39-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:29:22-77
+40    <uses-permission android:name="android.permission.health.READ_BODY_TEMPERATURE" />
+40-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:30:5-86
+40-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:30:22-84
+41    <uses-permission android:name="android.permission.health.WRITE_BODY_TEMPERATURE" />
+41-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:31:5-87
+41-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:31:22-85
+42    <uses-permission android:name="android.permission.health.READ_BONE_MASS" />
+42-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:32:5-79
+42-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:32:22-77
+43    <uses-permission android:name="android.permission.health.WRITE_BONE_MASS" />
+43-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:33:5-80
+43-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:33:22-78
+44    <uses-permission android:name="android.permission.health.READ_CERVICAL_MUCUS" />
+44-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:34:5-84
+44-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:34:22-82
+45    <uses-permission android:name="android.permission.health.WRITE_CERVICAL_MUCUS" />
+45-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:35:5-85
+45-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:35:22-83
+46    <uses-permission android:name="android.permission.health.READ_EXERCISE" />
+46-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:36:5-78
+46-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:36:22-76
+47    <uses-permission android:name="android.permission.health.WRITE_EXERCISE" />
+47-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:37:5-79
+47-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:37:22-77
+48    <uses-permission android:name="android.permission.health.READ_DISTANCE" />
+48-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:38:5-78
+48-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:38:22-76
+49    <uses-permission android:name="android.permission.health.WRITE_DISTANCE" />
+49-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:39:5-79
+49-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:39:22-77
+50    <uses-permission android:name="android.permission.health.READ_ELEVATION_GAINED" />
+50-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:40:5-86
+50-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:40:22-84
+51    <uses-permission android:name="android.permission.health.WRITE_ELEVATION_GAINED" />
+51-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:41:5-87
+51-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:41:22-85
+52    <uses-permission android:name="android.permission.health.READ_EXERCISE" />
+52-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:36:5-78
+52-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:36:22-76
+53    <uses-permission android:name="android.permission.health.WRITE_EXERCISE" />
+53-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:37:5-79
+53-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:37:22-77
+54    <uses-permission android:name="android.permission.health.READ_FLOORS_CLIMBED" />
+54-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:44:5-84
+54-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:44:22-82
+55    <uses-permission android:name="android.permission.health.WRITE_FLOORS_CLIMBED" />
+55-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:45:5-85
+55-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:45:22-83
+56    <uses-permission android:name="android.permission.health.READ_HEART_RATE" />
+56-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:46:5-80
+56-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:46:22-78
+57    <uses-permission android:name="android.permission.health.WRITE_HEART_RATE" />
+57-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:47:5-81
+57-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:47:22-79
+58    <uses-permission android:name="android.permission.health.READ_HEIGHT" />
+58-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:48:5-76
+58-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:48:22-74
+59    <uses-permission android:name="android.permission.health.WRITE_HEIGHT" />
+59-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:49:5-77
+59-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:49:22-75
+60    <uses-permission android:name="android.permission.health.READ_HYDRATION" />
+60-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:50:5-79
+60-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:50:22-77
+61    <uses-permission android:name="android.permission.health.WRITE_HYDRATION" />
+61-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:51:5-80
+61-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:51:22-78
+62    <uses-permission android:name="android.permission.health.READ_LEAN_BODY_MASS" />
+62-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:52:5-84
+62-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:52:22-82
+63    <uses-permission android:name="android.permission.health.WRITE_LEAN_BODY_MASS" />
+63-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:53:5-85
+63-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:53:22-83
+64    <uses-permission android:name="android.permission.health.READ_MENSTRUATION" />
+64-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:54:5-82
+64-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:54:22-80
+65    <uses-permission android:name="android.permission.health.WRITE_MENSTRUATION" />
+65-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:55:5-83
+65-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:55:22-81
+66    <uses-permission android:name="android.permission.health.READ_MENSTRUATION" />
+66-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:54:5-82
+66-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:54:22-80
+67    <uses-permission android:name="android.permission.health.WRITE_MENSTRUATION" />
+67-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:55:5-83
+67-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:55:22-81
+68    <uses-permission android:name="android.permission.health.READ_NUTRITION" />
+68-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:58:5-79
+68-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:58:22-77
+69    <uses-permission android:name="android.permission.health.WRITE_NUTRITION" />
+69-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:59:5-80
+69-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:59:22-78
+70    <uses-permission android:name="android.permission.health.READ_OVULATION_TEST" />
+70-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:60:5-84
+70-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:60:22-82
+71    <uses-permission android:name="android.permission.health.WRITE_OVULATION_TEST" />
+71-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:61:5-85
+71-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:61:22-83
+72    <uses-permission android:name="android.permission.health.READ_OXYGEN_SATURATION" />
+72-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:62:5-87
+72-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:62:22-85
+73    <uses-permission android:name="android.permission.health.WRITE_OXYGEN_SATURATION" />
+73-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:63:5-88
+73-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:63:22-86
+74    <uses-permission android:name="android.permission.health.READ_POWER" />
+74-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:64:5-75
+74-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:64:22-73
+75    <uses-permission android:name="android.permission.health.WRITE_POWER" />
+75-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:65:5-76
+75-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:65:22-74
+76    <uses-permission android:name="android.permission.health.READ_RESPIRATORY_RATE" />
+76-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:66:5-86
+76-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:66:22-84
+77    <uses-permission android:name="android.permission.health.WRITE_RESPIRATORY_RATE" />
+77-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:67:5-87
+77-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:67:22-85
+78    <uses-permission android:name="android.permission.health.READ_RESTING_HEART_RATE" />
+78-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:68:5-88
+78-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:68:22-86
+79    <uses-permission android:name="android.permission.health.WRITE_RESTING_HEART_RATE" />
+79-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:69:5-89
+79-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:69:22-87
+80    <uses-permission android:name="android.permission.health.READ_SEXUAL_ACTIVITY" />
+80-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:70:5-85
+80-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:70:22-83
+81    <uses-permission android:name="android.permission.health.WRITE_SEXUAL_ACTIVITY" />
+81-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:71:5-86
+81-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:71:22-84
+82    <uses-permission android:name="android.permission.health.READ_SLEEP" />
+82-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:72:5-75
+82-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:72:22-73
+83    <uses-permission android:name="android.permission.health.WRITE_SLEEP" />
+83-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:73:5-76
+83-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:73:22-74
+84    <uses-permission android:name="android.permission.health.READ_SLEEP" />
+84-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:72:5-75
+84-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:72:22-73
+85    <uses-permission android:name="android.permission.health.WRITE_SLEEP" />
+85-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:73:5-76
+85-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:73:22-74
+86    <uses-permission android:name="android.permission.health.READ_SPEED" />
+86-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:76:5-75
+86-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:76:22-73
+87    <uses-permission android:name="android.permission.health.WRITE_SPEED" />
+87-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:77:5-76
+87-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:77:22-74
+88    <uses-permission android:name="android.permission.health.READ_STEPS" />
+88-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:78:5-75
+88-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:78:22-73
+89    <uses-permission android:name="android.permission.health.WRITE_STEPS" />
+89-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:79:5-76
+89-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:79:22-74
+90    <uses-permission android:name="android.permission.health.READ_TOTAL_CALORIES_BURNED" />
+90-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:80:5-91
+90-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:80:22-89
+91    <uses-permission android:name="android.permission.health.WRITE_TOTAL_CALORIES_BURNED" />
+91-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:81:5-92
+91-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:81:22-90
+92    <uses-permission android:name="android.permission.health.READ_VO2_MAX" />
+92-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:82:5-77
+92-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:82:22-75
+93    <uses-permission android:name="android.permission.health.WRITE_VO2_MAX" />
+93-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:83:5-78
+93-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:83:22-76
+94    <uses-permission android:name="android.permission.health.READ_WEIGHT" />
+94-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:84:5-76
+94-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:84:22-74
+95    <uses-permission android:name="android.permission.health.WRITE_WEIGHT" />
+95-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:85:5-77
+95-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:85:22-75
+96    <uses-permission android:name="android.permission.health.READ_WHEELCHAIR_PUSHES" />
+96-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:86:5-87
+96-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:86:22-85
+97    <uses-permission android:name="android.permission.health.WRITE_WHEELCHAIR_PUSHES" />
+97-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:87:5-88
+97-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:87:22-86
+98
+99    <queries>
+99-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:3:5-11:15
+100        <intent>
+100-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:89:9-92:18
+101            <action android:name="android.intent.action.VIEW" />
+101-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:17-68
+101-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:25-66
+102
+103            <data android:scheme="geo" />
+103-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+103-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+104        </intent>
+105    </queries>
+106    <queries>
+106-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:3:5-11:15
+107        <intent>
+107-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:95:9-98:18
+108            <action android:name="android.intent.action.VIEW" />
+108-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:17-68
+108-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:25-66
+109
+110            <data android:scheme="tel" />
+110-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+110-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+111        </intent>
+112    </queries>
+113
+114    <uses-permission android:name="android.permission.WAKE_LOCK" />
+114-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-68
+114-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-65
+115    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+115-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-79
+115-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-76
+116    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+116-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-77
+116-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-74
+117    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+117-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:26:5-82
+117-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:26:22-79
+118    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+118-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:25:5-79
+118-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:25:22-76
+119    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+119-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:26:5-110
+119-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:26:22-107
+120
+121    <permission
+121-->[androidx.core:core:1.10.1] /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+122        android:name="com.vernost.BounzAppUAT.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+122-->[androidx.core:core:1.10.1] /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+123        android:protectionLevel="signature" />
+123-->[androidx.core:core:1.10.1] /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+124
+125    <uses-permission android:name="com.vernost.BounzAppUAT.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+125-->[androidx.core:core:1.10.1] /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+125-->[androidx.core:core:1.10.1] /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+126
+127    <application
+127-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:100:5-155:19
+128        android:name="com.vernost.BounzAppUAT.BounzApplication"
+128-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:100:104-159
+129        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+129-->[androidx.core:core:1.10.1] /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+130        android:dataExtractionRules="@xml/data_extraction_rules"
+130-->[com.spikeapi.sdk:spike-sdk:2.3.2] /Users/dreamworld/.gradle/caches/transforms-3/d52fc787abb59350ef7a0424f92792c7/transformed/jetified-spike-sdk-2.3.2/AndroidManifest.xml:10:9-65
+131        android:exported="true"
+131-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:100:54-77
+132        android:extractNativeLibs="false"
+133        android:fullBackupContent="@xml/backup_rules"
+133-->[com.spikeapi.sdk:spike-sdk:2.3.2] /Users/dreamworld/.gradle/caches/transforms-3/d52fc787abb59350ef7a0424f92792c7/transformed/jetified-spike-sdk-2.3.2/AndroidManifest.xml:11:9-54
+134        android:icon="@mipmap/ic_launcher"
+134-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:100:160-194
+135        android:label="Bounz UAT"
+135-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:100:78-103
+136        android:supportsRtl="true"
+136-->[com.spikeapi.sdk:spike-sdk:2.3.2] /Users/dreamworld/.gradle/caches/transforms-3/d52fc787abb59350ef7a0424f92792c7/transformed/jetified-spike-sdk-2.3.2/AndroidManifest.xml:13:9-35
+137        android:usesCleartextTraffic="true" >
+137-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:100:18-53
+138        <activity
+138-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:101:9-162
+139            android:name="com.yalantis.ucrop.UCropActivity"
+139-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:101:19-66
+140            android:screenOrientation="portrait"
+140-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:101:67-103
+141            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+141-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:101:104-160
+142        <activity
+142-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:9-138:20
+143            android:name="com.vernost.BounzAppUAT.MainActivity"
+143-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:19-70
+144            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+144-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:130-280
+145            android:exported="true"
+145-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:71-94
+146            android:hardwareAccelerated="true"
+146-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:281-315
+147            android:theme="@style/LaunchTheme"
+147-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:95-129
+148            android:windowSoftInputMode="adjustResize" >
+148-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:102:316-358
+149
+150            <!--
+151                 Specifies an Android theme to apply to this Activity as soon as
+152                 the Android process has started. This theme is visible to the user
+153                 while the Flutter UI initializes. After that, this theme continues
+154                 to determine the Window background behind the Flutter UI.
+155            -->
+156            <meta-data
+156-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:107:13-120
+157                android:name="io.flutter.embedding.android.NormalTheme"
+157-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:107:24-79
+158                android:resource="@style/NormalTheme" />
+158-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:107:80-117
+159            <meta-data
+159-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:108:13-138
+160                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+160-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:108:24-88
+161                android:resource="@drawable/launch_background" />
+161-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:108:89-135
+162            <meta-data
+162-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:109:13-105
+163                android:name="health_permissions"
+163-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:109:24-57
+164                android:resource="@array/health_permissions" />
+164-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:109:58-102
+165
+166            <intent-filter>
+166-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:110:13-112:29
+167                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+167-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:111:17-92
+167-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:111:25-89
+168            </intent-filter>
+169            <intent-filter>
+169-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:113:13-115:29
+170                <action android:name="androidx.health.ACTION_HEALTH_CONNECT_SETTINGS" />
+170-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:114:17-89
+170-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:114:25-86
+171            </intent-filter>
+172            <intent-filter>
+172-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:116:13-119:29
+173                <action android:name="android.intent.action.MAIN" />
+173-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:117:17-68
+173-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:117:25-66
+174
+175                <category android:name="android.intent.category.LAUNCHER" />
+175-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:118:17-76
+175-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:118:27-74
+176            </intent-filter>
+177            <intent-filter>
+177-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:120:13-123:29
+178                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+178-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:121:17-69
+178-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:121:25-66
+179
+180                <category android:name="android.intent.category.DEFAULT" />
+180-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:17-76
+180-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:27-73
+181            </intent-filter>
+182            <intent-filter>
+182-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:116:13-119:29
+183                <action android:name="android.intent.action.MAIN" />
+183-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:117:17-68
+183-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:117:25-66
+184
+185                <category android:name="android.intent.category.LAUNCHER" />
+185-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:118:17-76
+185-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:118:27-74
+186            </intent-filter>
+187            <intent-filter android:autoVerify="true" >
+187-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:129:13-137:29
+187-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:129:28-53
+188                <action android:name="android.intent.action.VIEW" />
+188-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:17-68
+188-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:25-66
+189
+190                <category android:name="android.intent.category.DEFAULT" />
+190-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:17-76
+190-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:27-73
+191                <category android:name="android.intent.category.BROWSABLE" />
+191-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:132:17-77
+191-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:132:27-75
+192
+193                <data android:scheme="http" />
+193-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+193-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+194                <data android:scheme="https" />
+194-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+194-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+195                <data android:scheme="geo" />
+195-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+195-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+196                <data android:host="www.bounz.com" />
+196-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+196-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:136:23-51
+197            </intent-filter>
+198        </activity>
+199
+200        <service
+200-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:139:9-143:19
+201            android:name="com.moengage.firebase.MoEFireBaseMessagingService"
+201-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:139:18-82
+202            android:exported="false" >
+202-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:139:83-107
+203            <intent-filter>
+203-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:140:13-142:29
+204                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+204-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:141:17-78
+204-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:141:25-75
+205            </intent-filter>
+206        </service>
+207
+208        <activity
+208-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:144:9-145:81
+209            android:name="com.facebook.FacebookActivity"
+209-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:144:19-63
+210            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+210-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:144:64-164
+211            android:theme="@style/com_facebook_activity_theme" />
+211-->[com.facebook.android:facebook-common:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/AndroidManifest.xml:25:13-63
+212        <activity
+212-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:146:9-153:20
+213            android:name="com.facebook.CustomTabActivity"
+213-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:146:19-64
+214            android:exported="true" >
+214-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:146:65-88
+215            <intent-filter>
+215-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:147:13-152:29
+216                <action android:name="android.intent.action.VIEW" />
+216-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:17-68
+216-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:25-66
+217
+218                <category android:name="android.intent.category.DEFAULT" />
+218-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:17-76
+218-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:27-73
+219                <category android:name="android.intent.category.BROWSABLE" />
+219-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:132:17-77
+219-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:132:27-75
+220
+221                <data android:scheme="@string/fb_login_protocol_scheme" />
+221-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+221-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+222            </intent-filter>
+223            <intent-filter>
+223-->[com.facebook.android:facebook-common:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/AndroidManifest.xml:31:13-40:29
+224                <action android:name="android.intent.action.VIEW" />
+224-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:17-68
+224-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:130:25-66
+225
+226                <category android:name="android.intent.category.DEFAULT" />
+226-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:17-76
+226-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:122:27-73
+227                <category android:name="android.intent.category.BROWSABLE" />
+227-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:132:17-77
+227-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:132:27-75
+228
+229                <data
+229-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:17-47
+230                    android:host="cct.com.vernost.BounzAppUAT"
+230-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:136:23-51
+231                    android:scheme="fbconnect" />
+231-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:133:23-44
+232            </intent-filter>
+233        </activity>
+234
+235        <meta-data
+235-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:154:9-72
+236            android:name="flutterEmbedding"
+236-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:154:20-51
+237            android:value="2" />
+237-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:154:52-69
+238
+239        <service
+239-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-19:72
+240            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+240-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-107
+241            android:exported="false"
+241-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+242            android:permission="android.permission.BIND_JOB_SERVICE" />
+242-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-69
+243        <service
+243-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-26:19
+244            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+244-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-97
+245            android:exported="false" >
+245-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-37
+246            <intent-filter>
+246-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:140:13-142:29
+247                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+247-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:141:17-78
+247-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:141:25-75
+248            </intent-filter>
+249        </service>
+250
+251        <receiver
+251-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-35:20
+252            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+252-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-98
+253            android:exported="true"
+253-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-36
+254            android:permission="com.google.android.c2dm.permission.SEND" >
+254-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-73
+255            <intent-filter>
+255-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+256                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+256-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+256-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+257            </intent-filter>
+258        </receiver>
+259
+260        <service
+260-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:9-41:19
+261            android:name="com.google.firebase.components.ComponentDiscoveryService"
+261-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:18-89
+262            android:directBootAware="true"
+262-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:34:13-43
+263            android:exported="false" >
+263-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/32b3aba06cc35e0cee9a56b9b1c2eaae/transformed/jetified-firebase-analytics-ktx-21.3.0/AndroidManifest.xml:10:13-37
+264            <meta-data
+264-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-40:85
+265                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+265-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:39:17-128
+266                android:value="com.google.firebase.components.ComponentRegistrar" />
+266-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:40:17-82
+267            <meta-data
+267-->[:firebase_crashlytics] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_crashlytics/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+268                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+268-->[:firebase_crashlytics] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_crashlytics/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-130
+269                android:value="com.google.firebase.components.ComponentRegistrar" />
+269-->[:firebase_crashlytics] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_crashlytics/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+270            <meta-data
+270-->[:firebase_dynamic_links] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_dynamic_links/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-15:85
+271                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+271-->[:firebase_dynamic_links] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_dynamic_links/intermediates/merged_manifest/release/AndroidManifest.xml:14:17-131
+272                android:value="com.google.firebase.components.ComponentRegistrar" />
+272-->[:firebase_dynamic_links] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_dynamic_links/intermediates/merged_manifest/release/AndroidManifest.xml:15:17-82
+273            <meta-data
+273-->[:firebase_core] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+274                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+274-->[:firebase_core] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+275                android:value="com.google.firebase.components.ComponentRegistrar" />
+275-->[:firebase_core] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+276            <meta-data
+276-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/32b3aba06cc35e0cee9a56b9b1c2eaae/transformed/jetified-firebase-analytics-ktx-21.3.0/AndroidManifest.xml:11:13-13:85
+277                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+277-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/32b3aba06cc35e0cee9a56b9b1c2eaae/transformed/jetified-firebase-analytics-ktx-21.3.0/AndroidManifest.xml:12:17-126
+278                android:value="com.google.firebase.components.ComponentRegistrar" />
+278-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/32b3aba06cc35e0cee9a56b9b1c2eaae/transformed/jetified-firebase-analytics-ktx-21.3.0/AndroidManifest.xml:13:17-82
+279            <meta-data
+279-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:53:13-55:85
+280                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+280-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:54:17-119
+281                android:value="com.google.firebase.components.ComponentRegistrar" />
+281-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:55:17-82
+282            <meta-data
+282-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/dreamworld/.gradle/caches/transforms-3/a7a8dde9621b1dcf11acd4cef36fa227/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
+283                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+283-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/dreamworld/.gradle/caches/transforms-3/a7a8dde9621b1dcf11acd4cef36fa227/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
+284                android:value="com.google.firebase.components.ComponentRegistrar" />
+284-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/dreamworld/.gradle/caches/transforms-3/a7a8dde9621b1dcf11acd4cef36fa227/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+285            <meta-data
+285-->[com.google.firebase:firebase-iid:21.1.0] /Users/dreamworld/.gradle/caches/transforms-3/aa4374529a06da63c92e4ae65cf49997/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+286                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+286-->[com.google.firebase:firebase-iid:21.1.0] /Users/dreamworld/.gradle/caches/transforms-3/aa4374529a06da63c92e4ae65cf49997/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+287                android:value="com.google.firebase.components.ComponentRegistrar" />
+287-->[com.google.firebase:firebase-iid:21.1.0] /Users/dreamworld/.gradle/caches/transforms-3/aa4374529a06da63c92e4ae65cf49997/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+288            <meta-data
+288-->[com.google.firebase:firebase-crashlytics:18.4.3] /Users/dreamworld/.gradle/caches/transforms-3/8f9ebc27afaa76ad19fd285f28c0a8b7/transformed/jetified-firebase-crashlytics-18.4.3/AndroidManifest.xml:15:13-17:85
+289                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+289-->[com.google.firebase:firebase-crashlytics:18.4.3] /Users/dreamworld/.gradle/caches/transforms-3/8f9ebc27afaa76ad19fd285f28c0a8b7/transformed/jetified-firebase-crashlytics-18.4.3/AndroidManifest.xml:16:17-115
+290                android:value="com.google.firebase.components.ComponentRegistrar" />
+290-->[com.google.firebase:firebase-crashlytics:18.4.3] /Users/dreamworld/.gradle/caches/transforms-3/8f9ebc27afaa76ad19fd285f28c0a8b7/transformed/jetified-firebase-crashlytics-18.4.3/AndroidManifest.xml:17:17-82
+291            <meta-data
+291-->[com.google.firebase:firebase-sessions:1.0.2] /Users/dreamworld/.gradle/caches/transforms-3/96876a953972a135f72b47b53d4368dc/transformed/jetified-firebase-sessions-1.0.2/AndroidManifest.xml:25:13-27:85
+292                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+292-->[com.google.firebase:firebase-sessions:1.0.2] /Users/dreamworld/.gradle/caches/transforms-3/96876a953972a135f72b47b53d4368dc/transformed/jetified-firebase-sessions-1.0.2/AndroidManifest.xml:26:17-117
+293                android:value="com.google.firebase.components.ComponentRegistrar" />
+293-->[com.google.firebase:firebase-sessions:1.0.2] /Users/dreamworld/.gradle/caches/transforms-3/96876a953972a135f72b47b53d4368dc/transformed/jetified-firebase-sessions-1.0.2/AndroidManifest.xml:27:17-82
+294            <meta-data
+294-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/32f284f222bcca1e2647ce49f5090a30/transformed/jetified-firebase-common-ktx-20.3.3/AndroidManifest.xml:14:13-16:85
+295                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+295-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/32f284f222bcca1e2647ce49f5090a30/transformed/jetified-firebase-common-ktx-20.3.3/AndroidManifest.xml:15:17-113
+296                android:value="com.google.firebase.components.ComponentRegistrar" />
+296-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/32f284f222bcca1e2647ce49f5090a30/transformed/jetified-firebase-common-ktx-20.3.3/AndroidManifest.xml:16:17-82
+297            <meta-data
+297-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:31:13-33:85
+298                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+298-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:32:17-139
+299                android:value="com.google.firebase.components.ComponentRegistrar" />
+299-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:33:17-82
+300            <meta-data
+300-->[com.google.firebase:firebase-installations:17.1.4] /Users/dreamworld/.gradle/caches/transforms-3/aa46d5990afa2485e92e384e1e710abc/transformed/jetified-firebase-installations-17.1.4/AndroidManifest.xml:15:13-17:85
+301                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+301-->[com.google.firebase:firebase-installations:17.1.4] /Users/dreamworld/.gradle/caches/transforms-3/aa46d5990afa2485e92e384e1e710abc/transformed/jetified-firebase-installations-17.1.4/AndroidManifest.xml:16:17-127
+302                android:value="com.google.firebase.components.ComponentRegistrar" />
+302-->[com.google.firebase:firebase-installations:17.1.4] /Users/dreamworld/.gradle/caches/transforms-3/aa46d5990afa2485e92e384e1e710abc/transformed/jetified-firebase-installations-17.1.4/AndroidManifest.xml:17:17-82
+303            <meta-data
+303-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/dreamworld/.gradle/caches/transforms-3/710c41485871ce953773511b63a4a5b2/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:27:13-29:85
+304                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+304-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/dreamworld/.gradle/caches/transforms-3/710c41485871ce953773511b63a4a5b2/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:28:17-115
+305                android:value="com.google.firebase.components.ComponentRegistrar" />
+305-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/dreamworld/.gradle/caches/transforms-3/710c41485871ce953773511b63a4a5b2/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:29:17-82
+306        </service>
+307
+308        <provider
+308-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:9-47:38
+309            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+309-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-102
+310            android:authorities="com.vernost.BounzAppUAT.flutterfirebasemessaginginitprovider"
+310-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-88
+311            android:exported="false"
+311-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-37
+312            android:initOrder="99" />
+312-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-35
+313
+314        <service
+314-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:56
+315            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+315-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-77
+316            android:enabled="true"
+316-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-35
+317            android:exported="false"
+317-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-37
+318            android:foregroundServiceType="location" />
+318-->[:geolocator_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-53
+319
+320        <provider
+320-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+321            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+321-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-77
+322            android:authorities="com.vernost.BounzAppUAT.flutter.share_provider"
+322-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+323            android:exported="false"
+323-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+324            android:grantUriPermissions="true" >
+324-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+325            <meta-data
+325-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:68
+326                android:name="android.support.FILE_PROVIDER_PATHS"
+326-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+327                android:resource="@xml/flutter_share_file_paths" />
+327-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-65
+328        </provider>
+329        <provider
+329-->[:image_picker_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+330            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+330-->[:image_picker_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+331            android:authorities="com.vernost.BounzAppUAT.flutter.image_provider"
+331-->[:image_picker_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+332            android:exported="false"
+332-->[:image_picker_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+333            android:grantUriPermissions="true" >
+333-->[:image_picker_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+334            <meta-data
+334-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:68
+335                android:name="android.support.FILE_PROVIDER_PATHS"
+335-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+336                android:resource="@xml/flutter_image_picker_file_paths" />
+336-->[:share_plus] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-65
+337        </provider>
+338
+339        <activity
+339-->[:url_launcher_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+340            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+340-->[:url_launcher_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+341            android:exported="false"
+341-->[:url_launcher_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+342            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+342-->[:url_launcher_android] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+343
+344        <service
+344-->[:location] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-17:56
+345            android:name="com.lyokone.location.FlutterLocationService"
+345-->[:location] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-71
+346            android:enabled="true"
+346-->[:location] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-35
+347            android:exported="false"
+347-->[:location] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+348            android:foregroundServiceType="location" />
+348-->[:location] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-53
+349
+350        <activity android:name="com.facebook.CustomTabMainActivity" />
+350-->[com.facebook.android:facebook-common:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/AndroidManifest.xml:26:9-71
+350-->[com.facebook.android:facebook-common:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/AndroidManifest.xml:26:19-68
+351
+352        <service
+352-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:24:9-32:19
+353            android:name="androidx.health.platform.client.impl.sdkservice.HealthDataSdkService"
+353-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:25:13-96
+354            android:enabled="true"
+354-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:26:13-35
+355            android:exported="true" >
+355-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:27:13-36
+356            <intent-filter>
+356-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:29:13-31:29
+357                <action android:name="androidx.health.platform.client.ACTION_BIND_SDK_SERVICE" />
+357-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:30:17-98
+357-->[androidx.health.connect:connect-client:1.0.0-alpha09] /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/AndroidManifest.xml:30:25-95
+358            </intent-filter>
+359        </service>
+360
+361        <activity
+361-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:20:9-23:61
+362            android:name="com.moengage.pushbase.internal.activity.PermissionActivity"
+362-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:21:13-86
+363            android:exported="false"
+363-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:22:13-37
+364            android:theme="@style/MoEPushPermissionTheme" />
+364-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:23:13-58
+365
+366        <receiver
+366-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:25:9-27:40
+367            android:name="com.moengage.pushbase.internal.MoEPushReceiver"
+367-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:26:13-74
+368            android:exported="false" />
+368-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:27:13-37
+369
+370        <activity
+370-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:29:9-33:86
+371            android:name="com.moengage.pushbase.activities.PushTracker"
+371-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:30:13-72
+372            android:configChanges="orientation|screenSize"
+372-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:31:13-59
+373            android:noHistory="true"
+373-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:32:13-37
+374            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+374-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:33:13-83
+375        <activity
+375-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:34:9-40:86
+376            android:name="com.moengage.pushbase.activities.PushClickDialogTracker"
+376-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:35:13-83
+377            android:configChanges="orientation|screenSize"
+377-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:36:13-59
+378            android:excludeFromRecents="true"
+378-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:37:13-46
+379            android:launchMode="singleInstance"
+379-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:38:13-48
+380            android:taskAffinity=""
+380-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:39:13-36
+381            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+381-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:40:13-83
+382
+383        <service
+383-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:42:9-44:40
+384            android:name="com.moengage.pushbase.internal.MoEPushWorker"
+384-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:43:13-72
+385            android:exported="false" />
+385-->[com.moengage:pushbase:6.9.0] /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/AndroidManifest.xml:44:13-37
+386
+387        <activity
+387-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+388            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+388-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+389            android:excludeFromRecents="true"
+389-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+390            android:exported="false"
+390-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+391            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+391-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+392        <!--
+393            Service handling Google Sign-In user revocation. For apps that do not integrate with
+394            Google Sign-In, this service will never be started.
+395        -->
+396        <service
+396-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+397            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+397-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+398            android:exported="true"
+398-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+399            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+399-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+400            android:visibleToInstantApps="true" />
+400-->[com.google.android.gms:play-services-auth:20.7.0] /Users/dreamworld/.gradle/caches/transforms-3/03450be4bd7036229e1de1cf38c4fdce/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+401
+402        <receiver
+402-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:29:9-36:20
+403            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+403-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:30:13-78
+404            android:exported="true"
+404-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:31:13-36
+405            android:permission="com.google.android.c2dm.permission.SEND" >
+405-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:32:13-73
+406            <intent-filter>
+406-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+407                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+407-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+407-->[:firebase_messaging] /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+408            </intent-filter>
+409        </receiver>
+410        <!--
+411             FirebaseMessagingService performs security checks at runtime,
+412             but set to not exported to explicitly avoid allowing another app to call it.
+413        -->
+414        <service
+414-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:42:9-49:19
+415            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+415-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:43:13-82
+416            android:directBootAware="true"
+416-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:44:13-43
+417            android:exported="false" >
+417-->[com.google.firebase:firebase-messaging:23.2.1] /Users/dreamworld/.gradle/caches/transforms-3/8107f5a849cac8b680a0ced0f8595d1a/transformed/jetified-firebase-messaging-23.2.1/AndroidManifest.xml:45:13-37
+418            <intent-filter android:priority="-500" >
+418-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:140:13-142:29
+419                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+419-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:141:17-78
+419-->/Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/android/app/src/main/AndroidManifest.xml:141:25-75
+420            </intent-filter>
+421        </service>
+422
+423        <activity
+423-->[com.google.android.gms:play-services-base:18.1.0] /Users/dreamworld/.gradle/caches/transforms-3/fcc2a04f03e2f38287fd782a561e8faa/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+424            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+424-->[com.google.android.gms:play-services-base:18.1.0] /Users/dreamworld/.gradle/caches/transforms-3/fcc2a04f03e2f38287fd782a561e8faa/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+425            android:exported="false"
+425-->[com.google.android.gms:play-services-base:18.1.0] /Users/dreamworld/.gradle/caches/transforms-3/fcc2a04f03e2f38287fd782a561e8faa/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+426            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+426-->[com.google.android.gms:play-services-base:18.1.0] /Users/dreamworld/.gradle/caches/transforms-3/fcc2a04f03e2f38287fd782a561e8faa/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+427
+428        <provider
+428-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:25:9-30:39
+429            android:name="com.google.firebase.provider.FirebaseInitProvider"
+429-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:26:13-77
+430            android:authorities="com.vernost.BounzAppUAT.firebaseinitprovider"
+430-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:27:13-72
+431            android:directBootAware="true"
+431-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:28:13-43
+432            android:exported="false"
+432-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:29:13-37
+433            android:initOrder="100" />
+433-->[com.google.firebase:firebase-common:20.3.3] /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:30:13-36
+434
+435        <receiver
+435-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:29:9-33:20
+436            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+436-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:30:13-85
+437            android:enabled="true"
+437-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:31:13-35
+438            android:exported="false" >
+438-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:32:13-37
+439        </receiver>
+440
+441        <service
+441-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:35:9-38:40
+442            android:name="com.google.android.gms.measurement.AppMeasurementService"
+442-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:36:13-84
+443            android:enabled="true"
+443-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:37:13-35
+444            android:exported="false" />
+444-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:38:13-37
+445        <service
+445-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:39:9-43:72
+446            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+446-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:40:13-87
+447            android:enabled="true"
+447-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:41:13-35
+448            android:exported="false"
+448-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:42:13-37
+449            android:permission="android.permission.BIND_JOB_SERVICE" />
+449-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:43:13-69
+450
+451        <meta-data
+451-->[com.google.android.gms:play-services-basement:18.2.0] /Users/dreamworld/.gradle/caches/transforms-3/d75343d2cf53f07cb161d848a4758e5a/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+452            android:name="com.google.android.gms.version"
+452-->[com.google.android.gms:play-services-basement:18.2.0] /Users/dreamworld/.gradle/caches/transforms-3/d75343d2cf53f07cb161d848a4758e5a/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+453            android:value="@integer/google_play_services_version" />
+453-->[com.google.android.gms:play-services-basement:18.2.0] /Users/dreamworld/.gradle/caches/transforms-3/d75343d2cf53f07cb161d848a4758e5a/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+454        <!--
+455         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+456         with the application context. This config is merged in with the host app's manifest,
+457         but there can only be one provider with the same authority activated at any given
+458         point; so if the end user has two or more different apps that use Facebook SDK, only the
+459         first one will be able to use the provider. To work around this problem, we use the
+460         following placeholder in the authority to identify each host application as if it was
+461         a completely different provider.
+462        -->
+463        <provider
+463-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:29:9-32:40
+464            android:name="com.facebook.internal.FacebookInitProvider"
+464-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:30:13-70
+465            android:authorities="com.vernost.BounzAppUAT.FacebookInitProvider"
+465-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:31:13-72
+466            android:exported="false" />
+466-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:32:13-37
+467
+468        <receiver
+468-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:34:9-40:20
+469            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+469-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:35:13-86
+470            android:exported="false" >
+470-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:36:13-37
+471            <intent-filter>
+471-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:37:13-39:29
+472                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+472-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:38:17-95
+472-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:38:25-92
+473            </intent-filter>
+474        </receiver>
+475        <receiver
+475-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:41:9-47:20
+476            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+476-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:42:13-118
+477            android:exported="false" >
+477-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:43:13-37
+478            <intent-filter>
+478-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:44:13-46:29
+479                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+479-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:45:17-103
+479-->[com.facebook.android:facebook-core:16.2.0] /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/AndroidManifest.xml:45:25-100
+480            </intent-filter>
+481        </receiver>
+482
+483        <provider
+483-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+484            android:name="androidx.startup.InitializationProvider"
+484-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+485            android:authorities="com.vernost.BounzAppUAT.androidx-startup"
+485-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+486            android:exported="false" >
+486-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+487            <meta-data
+487-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+488                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+488-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+489                android:value="androidx.startup" />
+489-->[androidx.emoji2:emoji2:1.0.0] /Users/dreamworld/.gradle/caches/transforms-3/f89d2b06ea59be317d1d5085d981ea44/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+490            <meta-data
+490-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/dreamworld/.gradle/caches/transforms-3/ce24e47f2f429c838aec2a43c7a67b32/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+491                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+491-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/dreamworld/.gradle/caches/transforms-3/ce24e47f2f429c838aec2a43c7a67b32/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+492                android:value="androidx.startup" />
+492-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/dreamworld/.gradle/caches/transforms-3/ce24e47f2f429c838aec2a43c7a67b32/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+493            <meta-data
+493-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+494                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+494-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+495                android:value="androidx.startup" />
+495-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+496        </provider>
+497
+498        <uses-library
+498-->[androidx.window:window:1.0.0-beta04] /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+499            android:name="androidx.window.extensions"
+499-->[androidx.window:window:1.0.0-beta04] /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+500            android:required="false" />
+500-->[androidx.window:window:1.0.0-beta04] /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+501        <uses-library
+501-->[androidx.window:window:1.0.0-beta04] /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+502            android:name="androidx.window.sidecar"
+502-->[androidx.window:window:1.0.0-beta04] /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+503            android:required="false" />
+503-->[androidx.window:window:1.0.0-beta04] /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+504
+505        <service
+505-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+506            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+506-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+507            android:exported="false" >
+507-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+508            <meta-data
+508-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+509                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+509-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+510                android:value="cct" />
+510-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+511        </service>
+512        <service
+512-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+513            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+513-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+514            android:exported="false"
+514-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+515            android:permission="android.permission.BIND_JOB_SERVICE" >
+515-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+516        </service>
+517
+518        <receiver
+518-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+519            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+519-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+520            android:exported="false" />
+520-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/dreamworld/.gradle/caches/transforms-3/3bc8ad610de726c50cbeb88eec12d926/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+521        <receiver
+521-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+522            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+522-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+523            android:directBootAware="false"
+523-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+524            android:enabled="true"
+524-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+525            android:exported="true"
+525-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+526            android:permission="android.permission.DUMP" >
+526-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+527            <intent-filter>
+527-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+528                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+528-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+528-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+529            </intent-filter>
+530            <intent-filter>
+530-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+531                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+531-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+531-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+532            </intent-filter>
+533            <intent-filter>
+533-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+534                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+534-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+534-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+535            </intent-filter>
+536            <intent-filter>
+536-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+537                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+537-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+537-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dreamworld/.gradle/caches/transforms-3/fb02cbad09f8c1140df5a6018fbd0f9f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+538            </intent-filter>
+539        </receiver>
+540
+541        <service
+541-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:20:9-22:72
+542            android:name="com.moengage.core.internal.data.reports.DataSyncJob"
+542-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:21:13-79
+543            android:permission="android.permission.BIND_JOB_SERVICE" />
+543-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:22:13-69
+544
+545        <activity
+545-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:24:9-28:63
+546            android:name="com.moe.pushlibrary.activities.MoEActivity"
+546-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:25:13-70
+547            android:exported="false"
+547-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:26:13-37
+548            android:label="@string/moe_core_rich_landing_title"
+548-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:27:13-64
+549            android:theme="@android:style/Theme.NoTitleBar" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+549-->[com.moengage:core:6.8.0] /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/AndroidManifest.xml:28:13-60
+550        <activity
+550-->[com.google.android.play:core-common:2.0.2] /Users/dreamworld/.gradle/caches/transforms-3/9fa154071a057874264451d7c481d7ab/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:14:9-18:65
+551            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+551-->[com.google.android.play:core-common:2.0.2] /Users/dreamworld/.gradle/caches/transforms-3/9fa154071a057874264451d7c481d7ab/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:15:13-93
+552            android:exported="false"
+552-->[com.google.android.play:core-common:2.0.2] /Users/dreamworld/.gradle/caches/transforms-3/9fa154071a057874264451d7c481d7ab/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:16:13-37
+553            android:stateNotNeeded="true"
+553-->[com.google.android.play:core-common:2.0.2] /Users/dreamworld/.gradle/caches/transforms-3/9fa154071a057874264451d7c481d7ab/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:17:13-42
+554            android:theme="@style/Theme.PlayCore.Transparent" />
+554-->[com.google.android.play:core-common:2.0.2] /Users/dreamworld/.gradle/caches/transforms-3/9fa154071a057874264451d7c481d7ab/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:18:13-62
+555    </application>
+556
+557</manifest>

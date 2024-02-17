@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "project_number": "410350249662",
+    "project_id": "bounz-revmap-uat-app",
+    "storage_bucket": "bounz-revmap-uat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410350249662:android:57675622efc0202a06a0ef",
+        "android_client_info": {
+          "package_name": "com.vernost.BounzAppUAT"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410350249662-6vb3kptvnch9r6mvdj4h8vr6u34eqhlp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "bd6759a49da97b949fee18dca21af968d032cc75"
+          }
+        },
+        {
+          "client_id": "410350249662-9n3pv4rb03hkhft4vm7u90me6u872lta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "77fcb463a0cb7fcd070daae05ff8a8e21a9d188c"
+          }
+        },
+        {
+          "client_id": "410350249662-cugou6l909tpsto9sdms1jbjjh0gqc1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "9637f2b1778dc3be45c68d285dafee4f663e3ccf"
+          }
+        },
+        {
+          "client_id": "410350249662-khqg09ves5tjs77rhgghibhh4mt37cfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "9291718c1fd4be690aec56259a0dcff8afe90fbe"
+          }
+        },
+        {
+          "client_id": "410350249662-oc7s1l4a2r2724pgffbs7hg3nmdo16s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "c56fae0f133f1d9e5535145ce6098389af2f4ae1"
+          }
+        },
+        {
+          "client_id": "410350249662-oenfcu8kaesj3jbhr0vt207a0t0ehcot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "252af02109980a1c7597b9608d98635f8bfb4fd3"
+          }
+        },
+        {
+          "client_id": "410350249662-tp8hlshehsucgg93krg7i5vgon3gm454.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vernost.BounzAppUAT",
+            "certificate_hash": "6eaf611975a0aec71369cec0bbab4ea222c89411"
+          }
+        },
+        {
+          "client_id": "410350249662-6iqhsr46hmhqjqr9o9bobumc6fs8nbvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Mx14T32X6TsFNWdM2bdxRIef-l-zw34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410350249662-6iqhsr46hmhqjqr9o9bobumc6fs8nbvb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "410350249662-24natpj2dqd1c9p4170f0kb22ddc1ml1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vernost.bounzuat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

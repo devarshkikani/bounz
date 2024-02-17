@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.66" y1="1" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1b2731"/>
+      <stop offset="1" stop-color="#666e75"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_88443" data-name="Group 88443" transform="translate(-89 -346)">
+    <path id="Path_138096" data-name="Path 138096" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z" transform="translate(89 346)" fill="url(#linear-gradient)"/>
+    <g id="email_variaton_2" data-name="email variaton 2" transform="translate(86.27 310.002)">
+      <path id="Path_140585" data-name="Path 140585" d="M12.73,113.84l1.78,1.152q3.844,2.492,7.684,4.989a.864.864,0,0,0,1.068,0q4.6-3,9.221-5.986l.232-.147c.006.08.014.137.014.2q0,4.831,0,9.662A2.456,2.456,0,0,1,30.25,126.2q-7.518.005-15.037,0a2.458,2.458,0,0,1-2.481-2.491q0-4.831,0-9.662v-.211Z" transform="translate(0 -62.192)" fill="#fff"/>
+      <path id="Path_140586" data-name="Path 140586" d="M23.713,47.984q3.748,0,7.5,0a2.455,2.455,0,0,1,2.427,1.925.213.213,0,0,1-.111.268q-4.841,3.133-9.677,6.275a.217.217,0,0,1-.276,0q-4.844-3.148-9.693-6.287a.2.2,0,0,1-.1-.251,2.459,2.459,0,0,1,2.442-1.933q3.748,0,7.5,0Z" transform="translate(-0.977)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

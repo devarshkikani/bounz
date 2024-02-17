@@ -1,0 +1,14 @@
+dev.fluttercommunity.plus.share.share_plus-jetified-window-java-1.0.0-beta04-0 /Users/dreamworld/.gradle/caches/transforms-3/2192e90f432a057d1809d160982486c3/transformed/jetified-window-java-1.0.0-beta04/res
+dev.fluttercommunity.plus.share.share_plus-lifecycle-runtime-2.3.1-1 /Users/dreamworld/.gradle/caches/transforms-3/26e4fb0f69bb8053e52876d6dcaa986b/transformed/lifecycle-runtime-2.3.1/res
+dev.fluttercommunity.plus.share.share_plus-core-1.7.0-2 /Users/dreamworld/.gradle/caches/transforms-3/5b9d513bc7201636a7b985f8912b35ae/transformed/core-1.7.0/res
+dev.fluttercommunity.plus.share.share_plus-jetified-core-ktx-1.7.0-3 /Users/dreamworld/.gradle/caches/transforms-3/9857c3d68b828507bd0c4fdc84e55451/transformed/jetified-core-ktx-1.7.0/res
+dev.fluttercommunity.plus.share.share_plus-jetified-window-1.0.0-beta04-4 /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/res
+dev.fluttercommunity.plus.share.share_plus-jetified-annotation-experimental-1.1.0-5 /Users/dreamworld/.gradle/caches/transforms-3/f59ac6a1f97f895e24e2db4404b7f538/transformed/jetified-annotation-experimental-1.1.0/res
+dev.fluttercommunity.plus.share.share_plus-main-6 /Users/dreamworld/.pub-cache/hosted/pub.dev/share_plus-4.5.3/android/src/main/res
+dev.fluttercommunity.plus.share.share_plus-release-7 /Users/dreamworld/.pub-cache/hosted/pub.dev/share_plus-4.5.3/android/src/release/res
+dev.fluttercommunity.plus.share.share_plus-pngs-8 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/generated/res/pngs/release
+dev.fluttercommunity.plus.share.share_plus-resValues-9 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/generated/res/resValues/release
+dev.fluttercommunity.plus.share.share_plus-rs-10 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/generated/res/rs/release
+dev.fluttercommunity.plus.share.share_plus-mergeReleaseResources-11 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/incremental/release/mergeReleaseResources/merged.dir
+dev.fluttercommunity.plus.share.share_plus-mergeReleaseResources-12 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+dev.fluttercommunity.plus.share.share_plus-merged_res-13 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/share_plus/intermediates/merged_res/release

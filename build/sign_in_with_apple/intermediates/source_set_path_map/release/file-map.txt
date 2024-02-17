@@ -1,0 +1,13 @@
+com.aboutyou.dart_packages.sign_in_with_apple-core-1.6.0-0 /Users/dreamworld/.gradle/caches/transforms-3/1077398287d24e3c22651bfa3832d39b/transformed/core-1.6.0/res
+com.aboutyou.dart_packages.sign_in_with_apple-jetified-window-java-1.0.0-beta04-1 /Users/dreamworld/.gradle/caches/transforms-3/2192e90f432a057d1809d160982486c3/transformed/jetified-window-java-1.0.0-beta04/res
+com.aboutyou.dart_packages.sign_in_with_apple-browser-1.2.0-2 /Users/dreamworld/.gradle/caches/transforms-3/65cbff29b1bf954348afd3b8cdda01ea/transformed/browser-1.2.0/res
+com.aboutyou.dart_packages.sign_in_with_apple-jetified-window-1.0.0-beta04-3 /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/res
+com.aboutyou.dart_packages.sign_in_with_apple-jetified-annotation-experimental-1.1.0-4 /Users/dreamworld/.gradle/caches/transforms-3/f59ac6a1f97f895e24e2db4404b7f538/transformed/jetified-annotation-experimental-1.1.0/res
+com.aboutyou.dart_packages.sign_in_with_apple-main-5 /Users/dreamworld/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/main/res
+com.aboutyou.dart_packages.sign_in_with_apple-release-6 /Users/dreamworld/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/android/src/release/res
+com.aboutyou.dart_packages.sign_in_with_apple-pngs-7 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sign_in_with_apple/generated/res/pngs/release
+com.aboutyou.dart_packages.sign_in_with_apple-resValues-8 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sign_in_with_apple/generated/res/resValues/release
+com.aboutyou.dart_packages.sign_in_with_apple-rs-9 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sign_in_with_apple/generated/res/rs/release
+com.aboutyou.dart_packages.sign_in_with_apple-mergeReleaseResources-10 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sign_in_with_apple/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.aboutyou.dart_packages.sign_in_with_apple-mergeReleaseResources-11 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sign_in_with_apple/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.aboutyou.dart_packages.sign_in_with_apple-merged_res-12 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sign_in_with_apple/intermediates/merged_res/release

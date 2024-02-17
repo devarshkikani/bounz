@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">410350249662-6iqhsr46hmhqjqr9o9bobumc6fs8nbvb.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">410350249662</string>
+    <string name="google_api_key" translatable="false">AIzaSyC5Mx14T32X6TsFNWdM2bdxRIef-l-zw34</string>
+    <string name="google_app_id" translatable="false">1:410350249662:android:57675622efc0202a06a0ef</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC5Mx14T32X6TsFNWdM2bdxRIef-l-zw34</string>
+    <string name="google_storage_bucket" translatable="false">bounz-revmap-uat-app.appspot.com</string>
+    <string name="project_id" translatable="false">bounz-revmap-uat-app</string>
+</resources>

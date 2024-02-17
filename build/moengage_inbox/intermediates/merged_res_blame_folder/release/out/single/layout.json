@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.moengage.flutter.inbox.moengage_inbox-merged_res-11:/layout/custom_dialog.xml",
+        "source": "com.moengage.flutter.inbox.moengage_inbox-core-1.6.0-0:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.moengage.flutter.inbox.moengage_inbox-merged_res-11:/layout/notification_template_part_chronometer.xml",
+        "source": "com.moengage.flutter.inbox.moengage_inbox-core-1.6.0-0:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.moengage.flutter.inbox.moengage_inbox-merged_res-11:/layout/notification_template_part_time.xml",
+        "source": "com.moengage.flutter.inbox.moengage_inbox-core-1.6.0-0:/layout/notification_template_part_time.xml"
+    }
+]

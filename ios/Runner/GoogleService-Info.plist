@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>410350249662-24natpj2dqd1c9p4170f0kb22ddc1ml1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.410350249662-24natpj2dqd1c9p4170f0kb22ddc1ml1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBWbRRTjZ_4B73J10o7PJ83UdQDzXf9z_w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>410350249662</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vernost.bounzuat</string>
+	<key>PROJECT_ID</key>
+	<string>bounz-revmap-uat-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bounz-revmap-uat-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:410350249662:ios:dbfcd24ed610971406a0ef</string>
+</dict>
+</plist>

@@ -1,0 +1,1424 @@
+# The proguard configuration file for the following section is /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.2.0
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
+# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
+# will be ignored by new version of the Android plugin for Gradle.
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize steps (and performs some
+# of these optimizations on its own).
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+-dontoptimize
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Preserve some attributes that may be required for reflection.
+-keepattributes AnnotationDefault,
+                EnclosingMethod,
+                InnerClasses,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations,
+                Signature
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class com.google.android.vending.licensing.ILicensingService
+-dontnote com.android.vending.licensing.ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+-dontnote com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# The support libraries contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontnote android.support.**
+-dontnote androidx.**
+-dontwarn android.support.**
+-dontwarn androidx.**
+
+# This class is deprecated, but remains for backward compatibility.
+-dontwarn android.util.FloatMath
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+-keep class androidx.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+
+# These classes are duplicated between android.jar and core-lambda-stubs.jar.
+-dontnote java.lang.invoke.**
+
+# End of content from /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.2.0
+# The proguard configuration file for the following section is /Users/dreamworld/developer/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
+# Build the ephemeral app in a module project.
+# Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
+# This is due to plugins (libraries) depending on the embedding (the program jar)
+-dontwarn io.flutter.plugin.**
+
+# The android.** package is provided by the OS at runtime.
+-dontwarn android.**
+
+# End of content from /Users/dreamworld/developer/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
+# The proguard configuration file for the following section is /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.health.platform.client.impl.sdkservice.HealthDataSdkService { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.baseflow.geolocator.GeolocatorLocationService { <init>(); }
+-keep class com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver { <init>(); }
+-keep class com.facebook.CurrentAccessTokenExpirationBroadcastReceiver { <init>(); }
+-keep class com.facebook.CustomTabActivity { <init>(); }
+-keep class com.facebook.CustomTabMainActivity { <init>(); }
+-keep class com.facebook.FacebookActivity { <init>(); }
+-keep class com.facebook.internal.FacebookInitProvider { <init>(); }
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.lyokone.location.FlutterLocationService { <init>(); }
+-keep class com.moe.pushlibrary.activities.MoEActivity { <init>(); }
+-keep class com.moengage.core.internal.data.reports.DataSyncJob { <init>(); }
+-keep class com.moengage.firebase.MoEFireBaseMessagingService { <init>(); }
+-keep class com.moengage.pushbase.activities.PushClickDialogTracker { <init>(); }
+-keep class com.moengage.pushbase.activities.PushTracker { <init>(); }
+-keep class com.moengage.pushbase.internal.MoEPushReceiver { <init>(); }
+-keep class com.moengage.pushbase.internal.MoEPushWorker { <init>(); }
+-keep class com.moengage.pushbase.internal.activity.PermissionActivity { <init>(); }
+-keep class com.vernost.BounzAppUAT.BounzApplication { <init>(); }
+-keep class com.vernost.BounzAppUAT.MainActivity { <init>(); }
+-keep class com.yalantis.ucrop.UCropActivity { <init>(); }
+-keep class dev.fluttercommunity.plus.share.ShareFileProvider { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService { <init>(); }
+-keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
+-keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.cardview.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.yalantis.ucrop.view.GestureCropImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.yalantis.ucrop.view.OverlayView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.yalantis.ucrop.view.UCropView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.yalantis.ucrop.view.widget.AspectRatioTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.yalantis.ucrop.view.widget.HorizontalProgressWheelView { <init>(android.content.Context, android.util.AttributeSet); }
+
+
+# End of content from /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# The proguard configuration file for the following section is /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_plugin_android_lifecycle/intermediates/consumer_proguard_dir/release/lib0/proguard.txt
+# The point of this package is to specify that a dependent plugin intends to
+# use the AndroidX lifecycle classes. Make sure no R8 heuristics shrink classes
+# brought in by the embedding's pom.
+#
+# This isn't strictly needed since by definition, plugins using Android
+# lifecycles should implement DefaultLifecycleObserver and therefore keep it
+# from being shrunk. But there seems to be an R8 bug so this needs to stay
+# https://issuetracker.google.com/issues/142778206.
+-keep class androidx.lifecycle.DefaultLifecycleObserver
+
+# End of content from /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/flutter_plugin_android_lifecycle/intermediates/consumer_proguard_dir/release/lib0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/a60de27344599da293ad9381e2d3dcc0/transformed/jetified-facebook-android-sdk-16.2.0/proguard.txt
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.all.All
+
+-keep public class com.android.vending.billing.IInAppBillingService {
+    public static com.android.vending.billing.IInAppBillingService asInterface(android.os.IBinder);
+    public android.os.Bundle getSkuDetails(int, java.lang.String, java.lang.String, android.os.Bundle);
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/a60de27344599da293ad9381e2d3dcc0/transformed/jetified-facebook-android-sdk-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/4ec6c3b3be79c5ce90d858c1894859a5/transformed/jetified-facebook-gamingservices-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.gamingservices.GamingServices
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/4ec6c3b3be79c5ce90d858c1894859a5/transformed/jetified-facebook-gamingservices-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/1015cec01546fe18feff1396bfe04a12/transformed/jetified-facebook-share-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.share.Share
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/1015cec01546fe18feff1396bfe04a12/transformed/jetified-facebook-share-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/622f434c90f7a879260392cbc743890a/transformed/jetified-facebook-applinks-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.applinks.AppLinks
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/622f434c90f7a879260392cbc743890a/transformed/jetified-facebook-applinks-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/dda676ef95ca6abc33f8f391a8b7e071/transformed/jetified-facebook-messenger-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepnames class com.facebook.messaging.analytics.reliability.ReliabilityInfo
+-keepnames class com.facebook.messaging.analytics.reliability.ReliabilityInfo.Outcome
+
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.messenger.Messenger
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/dda676ef95ca6abc33f8f391a8b7e071/transformed/jetified-facebook-messenger-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/d8f4888cedf7d72b33844579ec43f275/transformed/jetified-facebook-login-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.login.Login
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/d8f4888cedf7d72b33844579ec43f275/transformed/jetified-facebook-login-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.common.Common
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/0264e056ffa80070c0d0ecbcfabdafa0/transformed/jetified-facebook-common-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/proguard.txt
+#  Copyright (C) 2022 The Android Open Source Project
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+# libproto uses reflection to deserialize a Proto, which Proguard can't accurately detect.
+# Keep all the class members of any generated messages to ensure we can deserialize properly inside
+# these classes.
+-keepclassmembers class * extends androidx.health.platform.client.proto.GeneratedMessageLite {
+  <fields>;
+}
+
+# When constructing ErrorStatus, we use reflection to check the field is
+# declared, so names need to be kept in client apps.
+-keepclassmembers class androidx.health.platform.client.error.ErrorCode { *; }
+
+# Permissions are put into Intents and retrieved via getParcelable, which uses
+# reflection and require name to be kept in client apps.
+-keepnames class androidx.health.platform.client.permission.Permission
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/3056b5e67bb0bec16470aa6be8ade4bd/transformed/jetified-connect-client-1.0.0-alpha09/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/e7d373ac4c8c496ba2f9640d28c9d5cf/transformed/jetified-moe-android-sdk-12.9.00/proguard.txt
+-keep class com.moengage.android.Constants
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/e7d373ac4c8c496ba2f9640d28c9d5cf/transformed/jetified-moe-android-sdk-12.9.00/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/proguard.txt
+-keep class com.moengage.pushbase.internal.MoEPushWorker
+-keep class com.moengage.pushbase.activities.*
+-keep class com.moengage.fragments.*
+-keep class com.moengage.pushbase.internal.MoETimePickerDialog
+-keep class com.moengage.pushbase.push.PushMessageListener
+-keep class com.moengage.pushbase.internal.PushBaseHandlerImpl
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/58b6a89669ca12a212f58e5f66cb3871/transformed/jetified-pushbase-6.9.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/71151e5229d85b1b820227fdb9775c5d/transformed/appcompat-1.4.2/proguard.txt
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
+# keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
+-keep class androidx.appcompat.widget.SearchView { <init>(...); }
+
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl* {
+  <methods>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/71151e5229d85b1b820227fdb9775c5d/transformed/appcompat-1.4.2/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/1ce721748c743257c081ea96076c69a4/transformed/jetified-play-services-auth-base-18.0.4/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.auth.zzeu {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/1ce721748c743257c081ea96076c69a4/transformed/jetified-play-services-auth-base-18.0.4/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/5e503d029ca4f9f3f692dafcb5ae2a1f/transformed/jetified-play-services-fido-20.0.1/proguard.txt
+# Methods enable and disable in this class are complained as unresolved
+# references, but they are system APIs and are not used by Fido client apps.
+-dontwarn android.nfc.NfcAdapter
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/5e503d029ca4f9f3f692dafcb5ae2a1f/transformed/jetified-play-services-fido-20.0.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/fcc2a04f03e2f38287fd782a561e8faa/transformed/jetified-play-services-base-18.1.0/proguard.txt
+# b/35135904 Ensure that proguard will not strip the mResultGuardian.
+-keepclassmembers class com.google.android.gms.common.api.internal.BasePendingResult {
+  com.google.android.gms.common.api.internal.BasePendingResult$ReleasableResultGuardian mResultGuardian;
+}
+
+
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/fcc2a04f03e2f38287fd782a561e8faa/transformed/jetified-play-services-base-18.1.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/proguard.txt
+# Can be removed once we pull in a dependency on firebase-common that includes
+# https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzlb {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/d97e2bbcbec7ab85ee3463475062d07a/transformed/jetified-play-services-measurement-api-21.3.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/b185c21b61ba067e2f4f194b4969b78b/transformed/jetified-firebase-auth-interop-20.0.0/proguard.txt
+# Can be removed once we pull in a dependency on firebase-common that includes
+# https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/b185c21b61ba067e2f4f194b4969b78b/transformed/jetified-firebase-auth-interop-20.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/proguard.txt
+-dontwarn com.google.firebase.platforminfo.KotlinDetector
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/30043a49b503ba12b85fbd290718c11b/transformed/jetified-firebase-common-20.3.3/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzlb {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/46e0ee127f2cd0c11b10d5ed8a0f01bb/transformed/jetified-play-services-measurement-21.3.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/e28f27ce59f0a426169c4ff06f843e02/transformed/jetified-play-services-measurement-sdk-21.3.0/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzlb {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/e28f27ce59f0a426169c4ff06f843e02/transformed/jetified-play-services-measurement-sdk-21.3.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/0a54b0b0405359f04071d89fb37c77ab/transformed/jetified-play-services-measurement-impl-21.3.0/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzlb {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/0a54b0b0405359f04071d89fb37c77ab/transformed/jetified-play-services-measurement-impl-21.3.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/a3e7ea49d3efee6cae1f037df7e04f47/transformed/jetified-play-services-tasks-18.0.2/proguard.txt
+
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/a3e7ea49d3efee6cae1f037df7e04f47/transformed/jetified-play-services-tasks-18.0.2/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/c31c2230d485e92e0f638f863378e632/transformed/jetified-play-services-measurement-sdk-api-21.3.0/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzlb {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/c31c2230d485e92e0f638f863378e632/transformed/jetified-play-services-measurement-sdk-api-21.3.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/c7a1893e8a763393cedc1114829069bf/transformed/jetified-play-services-measurement-base-21.3.0/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzlb {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/c7a1893e8a763393cedc1114829069bf/transformed/jetified-play-services-measurement-base-21.3.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/d75343d2cf53f07cb161d848a4758e5a/transformed/jetified-play-services-basement-18.2.0/proguard.txt
+# Needed when building against pre-Marshmallow SDK.
+-dontwarn android.security.NetworkSecurityPolicy
+
+# Needed when building against Marshmallow SDK.
+-dontwarn android.app.Notification
+
+# Protobuf has references not on the Android boot classpath
+-dontwarn sun.misc.Unsafe
+-dontwarn libcore.io.Memory
+
+# Annotations used during internal SDK shrinking.
+-dontwarn com.google.android.apps.common.proguard.UsedBy*
+-dontwarn com.google.android.apps.common.proguard.SideEffectFree
+
+# Annotations referenced by the SDK but whose definitions are contained in
+# non-required dependencies.
+-dontwarn javax.annotation.**
+-dontwarn org.checkerframework.**
+-dontwarn com.google.errorprone.annotations.**
+-dontwarn org.jspecify.nullness.NullMarked
+
+# Proguard flags for consumers of the Google Play services SDK
+# https://developers.google.com/android/guides/setup#add_google_play_services_to_your_project
+
+# Keep SafeParcelable NULL value, needed for reflection by DowngradeableSafeParcel
+-keepclassmembers public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+# Needed for Parcelable/SafeParcelable classes & their creators to not get renamed, as they are
+# found via reflection.
+-keep class com.google.android.gms.common.internal.ReflectedParcelable
+-keepnames class * implements com.google.android.gms.common.internal.ReflectedParcelable
+-keepclassmembers class * implements android.os.Parcelable {
+  public static final *** CREATOR;
+}
+
+# Keep the classes/members we need for client functionality.
+-keep @interface android.support.annotation.Keep
+-keep @androidx.annotation.Keep class *
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <fields>;
+}
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <methods>;
+}
+
+# Keep androidX equivalent of above android.support to allow Jetification.
+-keep @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class *
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <fields>;
+}
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <methods>;
+}
+
+# Keep the names of classes/members we need for client functionality.
+-keep @interface com.google.android.gms.common.annotation.KeepName
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+  @com.google.android.gms.common.annotation.KeepName *;
+}
+
+# Keep Dynamite API entry points
+-keep @interface com.google.android.gms.common.util.DynamiteApi
+-keep @com.google.android.gms.common.util.DynamiteApi public class * {
+  public <fields>;
+  public <methods>;
+}
+
+
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/d75343d2cf53f07cb161d848a4758e5a/transformed/jetified-play-services-basement-18.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/6a441f7f3de4e7a0c8eb85ef45a7f3af/transformed/fragment-1.3.6/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/6a441f7f3de4e7a0c8eb85ef45a7f3af/transformed/fragment-1.3.6/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers,allowoptimization enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keepnames class com.android.installreferrer.api.InstallReferrerClient
+-keepnames class com.android.installreferrer.api.InstallReferrerStateListener
+-keepnames class com.android.installreferrer.api.ReferrerDetails
+
+-keep class com.facebook.core.Core
+
+# keep class names and method names used by reflection by InAppPurchaseEventManager
+-keep public class com.android.vending.billing.IInAppBillingService {
+    public <methods>;
+}
+-keep public class com.android.vending.billing.IInAppBillingService$Stub {
+    public <methods>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/886f5e3dc01ab8a7c58705de1d1dffa5/transformed/jetified-facebook-core-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/01fabd8500fb4f74a7b812db88c340bf/transformed/jetified-savedstate-1.2.1/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/01fabd8500fb4f74a7b812db88c340bf/transformed/jetified-savedstate-1.2.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/ce24e47f2f429c838aec2a43c7a67b32/transformed/jetified-lifecycle-process-2.6.1/proguard.txt
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+-keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/ce24e47f2f429c838aec2a43c7a67b32/transformed/jetified-lifecycle-process-2.6.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/3e5565a4365b059f5972fcdfeb9842fc/transformed/lifecycle-viewmodel-2.6.1/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/3e5565a4365b059f5972fcdfeb9842fc/transformed/lifecycle-viewmodel-2.6.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/36ec33e5dc0c5fecc5694c5f2506749c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/36ec33e5dc0c5fecc5694c5f2506749c/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/73ed5de8352aaa5c07f3adc428346a3f/transformed/jetified-facebook-bolts-16.2.0/proguard.txt
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/73ed5de8352aaa5c07f3adc428346a3f/transformed/jetified-facebook-bolts-16.2.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/cd017d9d9dc8f135923fdc867040b2a5/transformed/webkit-1.7.0/proguard.txt
+# Copyright 2018 The Chromium Authors
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# We need to avoid obfuscating the support library boundary interface because
+# this API is shared with the Android Support Library.
+# Note that we only 'keep' the package org.chromium.support_lib_boundary itself,
+# any sub-packages of that package can still be obfuscated.
+-keep public class org.chromium.support_lib_boundary.* { public *; }
+
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent WebViewClientCompat from being renamed, since chromium depends on this name.
+-keepnames public class androidx.webkit.WebViewClientCompat
+
+# Prevent ProcessGlobalConfig and member sProcessGlobalConfig from being renamed, since chromium
+# depends on this name.
+-keepnames public class androidx.webkit.ProcessGlobalConfig {
+    private static final *** sProcessGlobalConfig;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/cd017d9d9dc8f135923fdc867040b2a5/transformed/webkit-1.7.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/f463a0564c90cf97d4ce8f35c7a38292/transformed/transition-1.4.1/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep a field in transition that is used to keep a reference to weakly-referenced object
+-keepclassmembers class androidx.transition.ChangeBounds$* extends android.animation.AnimatorListenerAdapter {
+  androidx.transition.ChangeBounds$ViewBounds mViewBounds;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/f463a0564c90cf97d4ce8f35c7a38292/transformed/transition-1.4.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Some methods in androidx.window.extensions are accessed through reflection and need to be kept.
+# Failure to do so can cause bugs such as b/157286362. This could be overly broad too and should
+# ideally be trimmed down to only the classes/methods that actually need to be kept. This should
+# be tracked in b/165268619.
+-keep class androidx.window.extensions.** { *; }
+-dontwarn androidx.window.extensions.**
+-keep class androidx.window.extensions.embedding.** { *; }
+-dontwarn androidx.window.extensions.embedding.**
+
+# Keep the whole library for now since there is a crash with a missing method.
+# TODO(b/165268619) Make a narrow rule
+-keep class androidx.window.** { *; }
+
+# We also neep to keep sidecar.** for the same reason.
+-keep class androidx.window.sidecar.** { *; }
+-dontwarn androidx.window.sidecar.**
+
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/9ab39117b7f8628ed081241aca72448c/transformed/media-1.0.0/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class androidx.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/9ab39117b7f8628ed081241aca72448c/transformed/media-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/3c237dab723941853aa474884116e266/transformed/coordinatorlayout-1.0.0/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/3c237dab723941853aa474884116e266/transformed/coordinatorlayout-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/5bbb207275859f0787ba4def4b8f1291/transformed/vectordrawable-animated-1.1.0/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# keep setters in VectorDrawables so that animations can still work.
+-keepclassmembers class androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$* {
+   void set*(***);
+   *** get*();
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/5bbb207275859f0787ba4def4b8f1291/transformed/vectordrawable-animated-1.1.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/bef04d14efeeb6cf6c4e9151802cafcc/transformed/core-1.10.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/7152404eb4144ac3e4222e876b6cd786/transformed/lifecycle-runtime-2.6.1/proguard.txt
+-keepattributes AnnotationDefault,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/7152404eb4144ac3e4222e876b6cd786/transformed/lifecycle-runtime-2.6.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/12aba7b04880a67a1b4f1bdf057b576b/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# Allow R8 to optimize away the FastServiceLoader.
+# Together with ServiceLoader optimization in R8
+# this results in direct instantiation when loading Dispatchers.Main
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatcherLoader {
+    boolean FAST_SERVICE_LOADER_ENABLED return false;
+}
+
+-assumenosideeffects class kotlinx.coroutines.internal.FastServiceLoaderKt {
+    boolean ANDROID_DETECTED return true;
+}
+
+# Disable support for "Missing Main Dispatcher", since we always have Android main dispatcher
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatchersKt {
+    boolean SUPPORT_MISSING return false;
+}
+
+# Statically turn off all debugging facilities and assertions
+-assumenosideeffects class kotlinx.coroutines.DebugKt {
+    boolean getASSERTIONS_ENABLED() return false;
+    boolean getDEBUG() return false;
+    boolean getRECOVER_STACK_TRACES() return false;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/12aba7b04880a67a1b4f1bdf057b576b/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/f928ca4402a32ad127c758d13918a4a8/transformed/jetified-datastore-preferences-1.0.0/proguard.txt
+-keepclassmembers class * extends androidx.datastore.preferences.protobuf.GeneratedMessageLite {
+    <fields>;
+}
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/f928ca4402a32ad127c758d13918a4a8/transformed/jetified-datastore-preferences-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/a4fb832c15233aa1b89cbf7bb9aea4e2/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# When editing this file, update the following files as well:
+# - META-INF/proguard/coroutines.pro
+# - META-INF/com.android.tools/proguard/coroutines.pro
+
+# Most of volatile fields are updated with AFU and should not be mangled
+-keepclassmembers class kotlinx.coroutines.** {
+    volatile <fields>;
+}
+
+# Same story for the standard library's SafeContinuation that also uses AtomicReferenceFieldUpdater
+-keepclassmembers class kotlin.coroutines.SafeContinuation {
+    volatile <fields>;
+}
+
+# These classes are only required by kotlinx.coroutines.debug.AgentPremain, which is only loaded when
+# kotlinx-coroutines-core is used as a Java agent, so these are not needed in contexts where ProGuard is used.
+-dontwarn java.lang.instrument.ClassFileTransformer
+-dontwarn sun.misc.SignalHandler
+-dontwarn java.lang.instrument.Instrumentation
+-dontwarn sun.misc.Signal
+
+# Only used in `kotlinx.coroutines.internal.ExceptionsConstructor`.
+# The case when it is not available is hidden in a `try`-`catch`, as well as a check for Android.
+-dontwarn java.lang.ClassValue
+
+# An annotation used for build tooling, won't be directly accessed.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/a4fb832c15233aa1b89cbf7bb9aea4e2/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/7d82757ecedec44ffe40b96dfb83dd3b/transformed/rules/lib/META-INF/proguard/moshi.pro
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+
+-keepclasseswithmembers class * {
+    @com.squareup.moshi.* <methods>;
+}
+
+-keep @com.squareup.moshi.JsonQualifier @interface *
+
+# Enum field names are used by the integrated EnumJsonAdapter.
+# values() is synthesized by the Kotlin compiler and is used by EnumJsonAdapter indirectly
+# Annotate enums with @JsonClass(generateAdapter = false) to use them with Moshi.
+-keepclassmembers @com.squareup.moshi.JsonClass class * extends java.lang.Enum {
+    <fields>;
+    **[] values();
+}
+
+# Keep helper method to avoid R8 optimisation that would keep all Kotlin Metadata when unwanted
+-keepclassmembers class com.squareup.moshi.internal.Util {
+    private static java.lang.String getKotlinMetadataClassName();
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/7d82757ecedec44ffe40b96dfb83dd3b/transformed/rules/lib/META-INF/proguard/moshi.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/a44d44d86bf32240394fe5a78069e641/transformed/jetified-transport-backend-cct-3.1.9/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/0b15d7cc4fe21d040a88d2b4e7240d36/transformed/jetified-inapp-6.8.0/proguard.txt
+-keep class com.moengage.inapp.internal.InAppHandlerImpl
+-keep class com.moengage.widgets.MoERatingBar
+-keep class com.moengage.widgets.NudgeView
+-keep class com.bumptech.glide.load.resource.gif.GifDrawable
+-keep class com.bumptech.glide.Glide
+
+-dontwarn com.moengage.inapp.internal.engine.ViewEngine
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/0b15d7cc4fe21d040a88d2b4e7240d36/transformed/jetified-inapp-6.8.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/406d02320a248f4bdafd6fb005b8a056/transformed/jetified-firebase-components-17.1.0/proguard.txt
+-dontwarn com.google.firebase.components.Component$Instantiation
+-dontwarn com.google.firebase.components.Component$ComponentType
+
+-keep class * implements com.google.firebase.components.ComponentRegistrar
+-keep,allowshrinking interface com.google.firebase.components.ComponentRegistrar
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/406d02320a248f4bdafd6fb005b8a056/transformed/jetified-firebase-components-17.1.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/52c4c82c0d35befb345b25e1f65f2b03/transformed/jetified-transport-api-3.0.0/proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/52c4c82c0d35befb345b25e1f65f2b03/transformed/jetified-transport-api-3.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/0d19110f31df232cf84e2783847e8c11/transformed/jetified-startup-runtime-1.1.1/proguard.txt
+# It's important that we preserve initializer names, given they are used in the AndroidManifest.xml.
+-keepnames class * extends androidx.startup.Initializer
+
+# These Proguard rules ensures that ComponentInitializers are are neither shrunk nor obfuscated,
+# and are a part of the primary dex file. This is because they are discovered and instantiated
+# during application startup.
+-keep class * extends androidx.startup.Initializer {
+    # Keep the public no-argument constructor while allowing other methods to be optimized.
+    <init>();
+}
+
+-assumenosideeffects class androidx.startup.StartupLogger { public static <methods>; }
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/0d19110f31df232cf84e2783847e8c11/transformed/jetified-startup-runtime-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/01f5ad367b7d33df0dd6e13d7b52d46c/transformed/versionedparcelable-1.1.1/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/01f5ad367b7d33df0dd6e13d7b52d46c/transformed/versionedparcelable-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/69b2b37d142d20e5df3a8c41645c4649/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/kotlin-reflect.pro
+# When editing this file, update the following files as well:
+# - META-INF/com.android.tools/proguard/kotlin-reflect.pro
+# - META-INF/com.android.tools/r8-upto-1.6.0/kotlin-reflect.pro
+# - META-INF/proguard/kotlin-reflect.pro
+# Keep Metadata annotations so they can be parsed at runtime.
+-keep class kotlin.Metadata { *; }
+
+# Keep generic signatures and annotations at runtime.
+# R8 requires InnerClasses and EnclosingMethod if you keepattributes Signature.
+-keepattributes InnerClasses,Signature,RuntimeVisible*Annotations,EnclosingMethod
+
+# Don't note on API calls from different JVM versions as they're gated properly at runtime.
+-dontnote kotlin.internal.PlatformImplementationsKt
+
+# Don't note on internal APIs, as there is some class relocating that shrinkers may unnecessarily find suspicious.
+-dontwarn kotlin.reflect.jvm.internal.**
+
+# Statically guarded by try-catch block and not used on Android, see CacheByClass
+-dontwarn java.lang.ClassValue
+
+# Do not even execute try-catch block for ClassValue
+-assumenosideeffects class kotlin.reflect.jvm.internal.CacheByClassKt {
+    boolean useClassValue return false;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/69b2b37d142d20e5df3a8c41645c4649/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/kotlin-reflect.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/5567d167be78df970345982898aa70fc/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+-keep,allowobfuscation @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+-keepclassmembers,allowobfuscation class * {
+  @androidx.annotation.DoNotInline <methods>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/5567d167be78df970345982898aa70fc/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/c1ded59ff283dcd737bb4145ed6508db/transformed/rules/lib/META-INF/proguard/retrofit2.pro
+# Retrofit does reflection on generic parameters. InnerClasses is required to use Signature and
+# EnclosingMethod is required to use InnerClasses.
+-keepattributes Signature, InnerClasses, EnclosingMethod
+
+# Retrofit does reflection on method and parameter annotations.
+-keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
+
+# Retain service method parameters when optimizing.
+-keepclassmembers,allowshrinking,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+
+# Ignore annotation used for build tooling.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+
+# Ignore JSR 305 annotations for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# Guarded by a NoClassDefFoundError try/catch and only used when on the classpath.
+-dontwarn kotlin.Unit
+
+# Top-level functions that can only be used by Kotlin.
+-dontwarn retrofit2.KotlinExtensions
+-dontwarn retrofit2.KotlinExtensions$*
+
+# With R8 full mode, it sees no subtypes of Retrofit interfaces since they are created with a Proxy
+# and replaces all potential values with null. Explicitly keeping the interfaces prevents this.
+-if interface * { @retrofit2.http.* <methods>; }
+-keep,allowobfuscation interface <1>
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/c1ded59ff283dcd737bb4145ed6508db/transformed/rules/lib/META-INF/proguard/retrofit2.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/fea61a6319522a999c79d107f756dfce/transformed/rules/lib/META-INF/proguard/okhttp3.pro
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# OkHttp platform used only on JVM and when Conscrypt dependency is available.
+-dontwarn okhttp3.internal.platform.ConscryptPlatform
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/fea61a6319522a999c79d107f756dfce/transformed/rules/lib/META-INF/proguard/okhttp3.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/19549e78e72900997fa4984a2211bf0e/transformed/rules/lib/META-INF/proguard/okio.pro
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/19549e78e72900997fa4984a2211bf0e/transformed/rules/lib/META-INF/proguard/okio.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/f4397d148417196f52b8bb45c423c1ab/transformed/rules/lib/META-INF/proguard/protobuf.pro
+# Recently Protobuf Javalite introduced a change that relies on reflection,
+# which doesn't work with Proguard. This rule keeps the reflection usages in
+# (shaded) Protobuf classes in Tink as-is.
+# The location of this file is determined by
+# - https://developer.android.com/studio/build/shrink-code#configuration-files
+# - https://docs.bazel.build/versions/master/be/java.html#java_library.resources
+# See also:
+# - https://github.com/google/tink/issues/361
+# - https://github.com/protocolbuffers/protobuf/issues/6463
+# WARNING: the shaded package name com.google.crypto.tink.shaded.protobuf must
+# be kept in sync with jar_jar_rules.txt.
+-keepclassmembers class * extends com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite {
+  <fields>;
+}
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/f4397d148417196f52b8bb45c423c1ab/transformed/rules/lib/META-INF/proguard/protobuf.pro
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/proguard.txt
+-keep class com.moe.pushlibrary.activities.** { *; }
+-keep class com.moengage.core.MoEHelper
+-keep class com.moengage.model.** { *;}
+
+-keep class com.moengage.location.GeoManager
+
+-keep class com.moengage.core.MoEngage
+
+-keep class com.moengage.core.internal.push.PushManager
+-keep class com.moengage.core.internal.push.fcm.FcmHandler
+-keep class com.moengage.core.internal.push.base.PushBaseHandler
+
+-keep class com.moengage.core.internal.pushamp.PushAmpHandler
+-keep class com.moengage.core.internal.pushamp.PushAmpManager
+
+-dontwarn com.moengage.core.internal.push.PushManager
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/5fc02e34141323d5524a6e948ae78afa/transformed/jetified-core-6.8.0/proguard.txt
+# The proguard configuration file for the following section is /Users/dreamworld/.gradle/caches/transforms-3/983778199adb1b142c617e8452a43729/transformed/jetified-moe-push-firebase-6.5.0/proguard.txt
+-keep class com.moengage.firebase.internal.FcmHandlerImpl
+
+# End of content from /Users/dreamworld/.gradle/caches/transforms-3/983778199adb1b142c617e8452a43729/transformed/jetified-moe-push-firebase-6.5.0/proguard.txt
+# The proguard configuration file for the following section is <unknown>
+-ignorewarnings
+# End of content from <unknown>

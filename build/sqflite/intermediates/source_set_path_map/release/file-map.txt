@@ -1,0 +1,12 @@
+com.tekartik.sqflite-core-1.6.0-0 /Users/dreamworld/.gradle/caches/transforms-3/1077398287d24e3c22651bfa3832d39b/transformed/core-1.6.0/res
+com.tekartik.sqflite-jetified-window-java-1.0.0-beta04-1 /Users/dreamworld/.gradle/caches/transforms-3/2192e90f432a057d1809d160982486c3/transformed/jetified-window-java-1.0.0-beta04/res
+com.tekartik.sqflite-jetified-window-1.0.0-beta04-2 /Users/dreamworld/.gradle/caches/transforms-3/ef615fdd783e134a3b8af33af88c4a23/transformed/jetified-window-1.0.0-beta04/res
+com.tekartik.sqflite-jetified-annotation-experimental-1.1.0-3 /Users/dreamworld/.gradle/caches/transforms-3/f59ac6a1f97f895e24e2db4404b7f538/transformed/jetified-annotation-experimental-1.1.0/res
+com.tekartik.sqflite-main-4 /Users/dreamworld/.pub-cache/hosted/pub.dev/sqflite-2.3.0/android/src/main/res
+com.tekartik.sqflite-release-5 /Users/dreamworld/.pub-cache/hosted/pub.dev/sqflite-2.3.0/android/src/release/res
+com.tekartik.sqflite-pngs-6 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sqflite/generated/res/pngs/release
+com.tekartik.sqflite-resValues-7 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sqflite/generated/res/resValues/release
+com.tekartik.sqflite-rs-8 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sqflite/generated/res/rs/release
+com.tekartik.sqflite-mergeReleaseResources-9 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sqflite/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.tekartik.sqflite-mergeReleaseResources-10 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sqflite/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.tekartik.sqflite-merged_res-11 /Users/dreamworld/Documents/Solace/bounz_app_revamp/bounz_revamp_app/build/sqflite/intermediates/merged_res/release
